@@ -18,6 +18,7 @@ $("#arrow").click(function () {
 
    hamburger.addEventListener('click', handleClick);
 
-   $(window).on("load",function(){
-    $(".loader-wrapper").fadeOut("slow");
+   window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
 });
