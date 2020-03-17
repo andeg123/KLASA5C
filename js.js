@@ -17,3 +17,7 @@ $("#arrow").click(function () {
    }
 
    hamburger.addEventListener('click', handleClick);
+
+   $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});
